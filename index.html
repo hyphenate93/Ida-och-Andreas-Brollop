@@ -32,7 +32,7 @@
             if (css === 'animate.css') {
                 link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
             } else if (css === 'font-awesome.css') {
-                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css';
             }
             link.rel = 'stylesheet';
 
@@ -73,7 +73,7 @@
                 <div class="header-nav">
                     <nav>
                         <ul class="primary-nav">
-                            <li><a href="#intro">Hur träffades vi?</a></li>
+                            <li><a href="#intro">Vår historia</a></li>
                             <li><a href="#events">Bra att veta</a></li>
                             <li><a href="#instagram">Instagram</a></li>
                             <li><a href="#eng-pics">Brudfölje</a></li>
@@ -120,7 +120,14 @@
             <div class="col-md-12 text-center">
                 <h3>Vi ska gifta oss!</h3>
                 Platsen är Tällberg och datumet 20/7 2024
+                <div id="countdown">
+                    <span id="days"></span> Dagar 
+                    <span id="hours"></span> Timmar 
+                    <span id="minutes"></span> Minuter 
+                    <span id="seconds"></span> Sekunder till bröllopet!
+                </div>
             </div>
+     
         </div>
     </div>
 </section>
@@ -129,14 +136,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h3 class="header">Hur träffades vi?</h3>
+                <h3 class="header">Vår historia</h3>
             </div>
         </div>
         <div class="row">
             <div class="col-md-3 hidden-sm hidden-xs"><img src="img/IMG_2317.jpg" class="wp1"></div>
             <div class="col-md-6">
                 <p>
-                 Vi träffades när vi båda arbetade i Tällberg på Green hotel. Vi flyttade sedan tillsaman ner till västkusten där vi båda är utbildade och idag arbetar.
+                    En grå novemberdag 2014 började Ida ett nytt jobb som servitris/frukostvärdinna på Green Hotel i Tällberg. Det hon inte visste då att den stora kärleken jobbade som kock i köket.. Efter några matcher i quizkampen tog Andreas mod till sig och skickade en vänförfrågan på facebook. Henne ska jag ha! Och tänk så bra det blev!
+                    Andreas hade stora planer att flytta till Göteborg och börja plugga. Men flyttlasset gick 10 mil längre söderut där Ida började plugga istället. Efter ett år i en lägenhet ute på vischan fick de förstahandskontrakt på en 3a i Falkenberg centrum. En resa till Luxemburg planerades 2019, och det inte Ida visste var att Andreas hade en överraskning som skulle genomföras. En ring hade packats ner och otaliga vackra platser besöktes. Men modet kom sista dagen på resan, på ett knä frågade Andreas om Ida ville gifta sig med honom. Svaret var självklart ja! Korna i hagen som tittade på var mycket nöjda med svaret.
+                    Efter färdiga studier och fina jobb kunde de äntligen köpa det röda huset med vita knutar i ostens heliga mecka - Kvibille. Nu startar bröllopsplaneringen…                     
                 </p>
             </div>
             <div class="col-md-3 hidden-sm hidden-xs"><img src="img/DSD_0214.jpg" class="wp2"></div>
@@ -158,29 +167,28 @@
         <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                 <div class="wp3">
-                    <p><strong>20 Juli</strong></p>
-
                     <h5>Boende</h5>
                     <p>Om du kommer långväga och vill övernatta rekommenderar vi Green Hotel, Tällbergs camping eller övriga hotell i byn. Tänk på att boka i tid då Tällberg är populärt på sommaren!</p>
                 </div>
                 <div class="wp5">
                     <h5>Mat och dryck <span class="time">7PM - 12AM</span></h5>
-                    <p>Förrätt, huvudrätt och traditionsenlig bröllopstårta. Vi bjuder på dryck såväl under middagen som i baren efteråt. Tänk på att hela kvällen kommer fotograferas rejält så varannan vatten rekommenderas ;) Vid midnatt öppnar korvkiosken.</p>
+                    <p>Förrätt, huvudrätt och traditionsenlig bröllopstårta. Vi bjuder på dryck såväl under middagen som i baren efteråt. Tänk på att hela kvällen kommer att fotograferas rejält så varannan vatten rekommenderas😉 Vid midnatt öppnar korvkiosken.</p>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                 <div class="wp4">
 
-                    <h5>Bröllop & fest <span class="time">10AM-11AM</span></h5>
+                    <h5>Vigsel & fest</h5>
                     <p>Festen och bröllopet kommer äga rum på samma plats vid Strandpaviljongen i Tällberg, så ni behöver inte röra på er mycket under dagen.</p>
                 </div>
-                <!-- <div class="wp6">
-                    <h5>Wedding <span class="time">6PM-12AM</span></h5>
-                    <p>This is the main event in the entire wedding when the bride and the groom tie the
-                        knot. The groom comes with the barat and is greeted by the bride side with some dhol of course
-                        as maximum number of guests would be attending this event. This is when the couple circle the
-                        sacred fire and are finally declared husband and wife.</p>
-                </div> -->
+                <div class="wp6">
+                    <h5>Tid<span class="time">XXXX tider</span></h5>
+                    <p>Välkomna till vår bröllopsdag med start kl XX</p>
+                </div>
+                <div class="wp6">
+                    <h5>Barn & Hundar</h5>
+                    <p>Detta är en kväll då barnvakter och hundvakter får ställa upp. 🙂 Middagen och festen kommer inte vara varken barn- eller hundvänlig.</p>
+                </div>
             </div>
         </div>
         <div class="row section-padding">
@@ -227,7 +235,7 @@
             <div class="col-md-12 text-center">
                 <h3>En bild säger mer än tusen ord!</h3>
                 <p>Hjälp oss gärna att minnas kvällen, taga era bilder med hashtagen 
-                    <a href="https://instagram.com/explore/tags/ramandantara/" target="_blank">#SörbuÖstlin</a>
+                    <a href="https://instagram.com/explore/tags/ramandantara/" target="_blank">#Sorbuostlin</a>
                 </p>
             </div>
         </div>
@@ -352,7 +360,6 @@
 <section id="map" class="section-padding">
     <div class="text-center">
         <h3>Hur tar man sig dit?</h3>
-        <p>Det är enklare än du tror!</p>
     </div>
     <div id="map-canvas"></div>
     <div id="map-content-wrapper" class="container pointer-events-none">
@@ -364,6 +371,7 @@
                         <div class="col-md-6">
                             <h5>Strandpaviljongen Tällberg</h5>
                             <p>Sjögattu 43, 793 70 Tällberg</p>
+                            <p>Dåligt med parkering på plats, promenera gärna om du bor på ett närliggande hotell.</p>
                         </div>
                         <div class="col-md-6">
                             <h5>Rasmus Lindy & Silja Proper</h5>
@@ -407,7 +415,7 @@
                 <div class="gift-card">
                     <img class="wedding-gift" src="img/italy.jpg" alt="Gift 1">
                     <h4>Bidrag till smekmånad i Italien</h4>
-                    <p>Resan bär av till vackra Italien där vi planerar att äta och dricka gott.</p>
+                    <p>Resan bär av till vackra Italien där vi planerar att äta och dricka gott. Eftersom budgeten tog slut efter denna fest kan man swisha valfritt bidrag till XXXX</p>
                 </div>
             </div>
             <!-- Card 2 -->
@@ -415,7 +423,7 @@
                 <div class="gift-card">
                     <img class="wedding-gift" src="img/cervera.jpg" alt="Gift 2">
                     <h4>Presentkort Cervera</h4>
-                    <p>Beskrivning av present 2.</p>
+                    <p>Vi behöver uppdatera vår servis! Ett gift par behöver matchande tallrikar. Ett bidrag till detta kommer uppskattas enormt.</p>
                 </div>
             </div>
             <!-- Card 3 -->
@@ -423,7 +431,7 @@
                 <div class="gift-card">
                     <img class="wedding-gift" src="img/mio.jpg" alt="Gift 3">
                     <h4>Presentkort Mio</h4>
-                    <p>Beskrivning av present 3.</p>
+                    <p>Gardiner som inte är solblekta, lampskärmar som matchar och kuddfodral som är utan hål kommer dessa presentkort gå till.</p>
                 </div>
             </div>
         </div>
@@ -433,25 +441,25 @@
                 <div class="gift-card">
                     <img class="wedding-gift" src="img/ikea.png" alt="Gift 4">
                     <h4>Presentkort Ikea</h4>
-                    <p>Beskrivning av present 4.</p>
+                    <p>Gardiner som inte är solblekta, lampskärmar som matchar och kuddfodral som är utan hål kommer dessa presentkort gå till. Eventuellt en bokhylla och ett eller 7 nya paket med värmeljus också.</p>
                 </div>
             </div>
             <!-- Card 5 -->
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
                 <div class="gift-card">
                     <img class="wedding-gift" src="img/eng_pics/NGP_4089-sm.jpg" alt="Gift 5">
                     <h4>Present Namn 5</h4>
                     <p>Beskrivning av present 5.</p>
                 </div>
-            </div>
+            </div> -->
             <!-- Card 6 -->
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
                 <div class="gift-card">
                     <img class="wedding-gift" src="img/eng_pics/NGP_4089-sm.jpg" alt="Gift 6">
                     <h4>Present Namn 6</h4>
                     <p>Beskrivning av present 6.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
@@ -478,7 +486,7 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h3>Kan ni komma?</h3>
-                <p>Vi ser gärna att vi fyller i er anmälan innan (Datum) så vi har möjlighet att beställa allt i tid</p>
+                <p>Vi ser gärna att vi fyller i er anmälan innan (Datum) så vi har möjlighet att räkna hur många varmkorvar vi behöver köpa.</p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
@@ -532,7 +540,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3>Egna önskemål för eventuella tal eller spex under kvällen</h3>
-                <p>Ni får gärna höra av er i förväg med detta formulär om ni önskar att bidra med något spex eller tal under kvällen så kan toastparet planera in det i schemat.</p>
+                <p>Brudparet önskar mest av allt att få den roligaste kvällen någonsin. Därför är spex, tal eller andra överraskningar varmt välkommet! Meddela nedan så kan toastparet planera in det i schemat.</p>
             </div>
         </div>
         <div class="row">
@@ -584,6 +592,27 @@
             document.getElementById('location-map').style.display = 'none';
             document.getElementById('location-info').style.display = 'block';
         });
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+        function updateCountdown() {
+            const weddingDate = new Date("July 20, 2024 00:00:00").getTime();
+            const now = new Date().getTime();
+    
+            const timeDifference = weddingDate - now;
+    
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+    
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
+        }
+    
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
     });
 </script>
 </body>
