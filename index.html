@@ -580,6 +580,12 @@
 <script src="js/scripts.min.js"></script>
 <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 <script>
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+if (!isMobile) {
+  // Use YTPlayer() for browsers
+  $('#browser-video').YTPlayer();
+}
     (function() {
     // get all data in form and return object
     function getFormData(form) {
