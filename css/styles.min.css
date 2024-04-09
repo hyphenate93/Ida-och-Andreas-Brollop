@@ -720,17 +720,6 @@ header .member-actions {
   color: #fff;
 }
 
-/* Mobile Styles */
-@media only screen and (max-width: 768px) {
-  #browser-video {
-    display: none;  /* Hide browser video on mobile */
-  }
-  
-  #mobile-video iframe {
-    width: 100%;  /* Force width to 100% for mobile */
-    height: 100%;  /* Force height to 100% for mobile */
-  }
-}
 
 #map-canvas {
     height: 500px;
