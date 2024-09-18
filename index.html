@@ -712,24 +712,25 @@
     });
 });
 document.addEventListener('DOMContentLoaded', function() {
-function updateCountdown() {
-    const weddingDate = new Date("July 20, 2024 00:00:00").getTime();
-    const now = new Date().getTime();
+    function updateCountdown() {
+        const weddingDate = new Date("July 20, 2024 00:00:00").getTime();
+        const now = new Date().getTime();
 
-    const timeDifference = weddingDate - now;
+        let timeDifference = now - weddingDate; // Reverse the difference to count time since wedding
 
-    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-    // Update the countdown in one line
-    document.getElementById("countdown").textContent = days + " Dagar " + hours + " Timmar " + minutes + " Minuter " + seconds + " Sekunder till bröllopet!";
-}
+        // Update the countdown text with time since the wedding
+        document.getElementById("countdown").textContent = days + " Dagar " + hours + " Timmar " + minutes + " Minuter " + seconds + " Sekunder sedan bröllopet!";
+    }
 
-updateCountdown();
-setInterval(updateCountdown, 1000);
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
 });
+
 
 </script>
 </body>
